@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+.bg-ink { background:
+  radial-gradient(900px 800px at 90% 5%, rgba(5,127,172,.6), transparent 60%),
+  radial-gradient(700px 600px at 0% 100%, rgba(241,244,6,.08), transparent 60%),
+  linear-gradient(rgba(255,255,255,.045) 2px, transparent 2px) 0 0/60px 60px,
+  linear-gradient(90deg, rgba(255,255,255,.045) 2px, transparent 2px) 0 0/60px 60px, #064D68; }
+.bg-light { background:
+  radial-gradient(rgba(5,127,172,.16) 2.5px, transparent 2.5px) 0 0/34px 34px,
+  radial-gradient(800px 700px at 100% 100%, rgba(5,127,172,.14), transparent 60%), #EFF7FA; }
+.frame { position:absolute; inset:36px; border:2px solid rgba(255,255,255,.14); border-radius:32px; }
+.lt .frame { border-color:rgba(6,77,104,.12); }
+.top { position:absolute; top:150px; right:90px; left:90px; display:flex; justify-content:space-between; align-items:center; font-size:26px; }
+.top .s { display:inline-flex; align-items:center; gap:10px; font-weight:700; padding:10px 24px; border-radius:999px; }
+.top .s i { width:12px; height:12px; border-radius:50%; background:var(--yellow); display:inline-block; }
+.dk .top .s { background:rgba(255,255,255,.16); } .lt .top .s { background:#fff; color:var(--blue); }
+.num { font-weight:700; line-height:.9; direction:ltr; display:inline-block; }
+.opt { background:#fff; border-radius:26px; padding:30px 36px; font-size:36px; font-weight:700; color:var(--ink); display:flex; justify-content:space-between; align-items:center; box-shadow:0 14px 30px rgba(6,77,104,.08); }
+.opt span { width:34px; height:34px; border-radius:50%; border:4px solid rgba(5,127,172,.4); }
+</style></head><body>
+
+<!-- 1 teaser for Tuesday carousel -->
+<section class="slide tall bg-ink dk">
+  <div class="frame"></div>
+  <div class="top"><span class="s"><i></i>مختبر أدوات الذكاء الاصطناعي</span><span>منشور جديد</span></div>
+  <div class="a" style="right:90px;left:90px;top:330px">
+    <div class="num" style="font-size:300px;color:var(--yellow)">50%</div>
+    <h1 style="font-size:70px;margin-top:40px">من الموظفين يعترفون:<br>نعتمد عليه <span class="mark">أكثر من اللازم.</span></h1>
+  </div>
+  <img src="../airely/r-03.png" class="a" style="width:520px;left:90px;top:1000px;border-radius:26px;transform:rotate(-4deg);box-shadow:0 40px 80px rgba(0,0,0,.4)">
+  <div class="a" style="right:90px;top:1180px;width:360px">
+    <p style="font-size:34px;line-height:1.5">وأنت..<br>كم تعتمد عليه؟</p>
+    <span class="pill" style="background:var(--yellow);color:var(--ink);font-size:30px;margin-top:30px">المنشور في الحساب</span>
+  </div>
+</section>
+
+<!-- 2 poll -->
+<section class="slide tall bg-light lt">
+  <div class="frame"></div>
+  <div class="top"><span class="s"><i></i>زينب LinkedIn</span><span>سؤال سريع</span></div>
+  <div class="a" style="right:90px;top:300px;font-size:200px;font-weight:700;line-height:1;color:var(--blue)">؟</div>
+  <div class="a" style="right:90px;left:90px;top:540px">
+    <p class="kick" style="font-size:32px">صراحة..</p>
+    <h1 style="font-size:84px;margin-top:20px">متى آخر مرة<br>عدّلت <span class="mark">عنوانك</span><br>على LinkedIn&rlm;؟</h1>
+  </div>
+  <div class="a" style="right:140px;left:140px;top:1100px;height:330px;border:4px dashed rgba(6,77,104,.3);border-radius:36px;display:flex;align-items:center;justify-content:center;font-size:26px;opacity:.8">مكان ملصق الاستفتاء</div>
+</section>
+</body></html>

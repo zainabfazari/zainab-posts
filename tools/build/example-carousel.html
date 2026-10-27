@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+/* editorial variant: thin frame, top rule, side index, big numerals */
+.frame { position:absolute; inset:36px; border:2px solid rgba(255,255,255,.14); border-radius:28px; pointer-events:none; }
+.lt .frame { border-color:rgba(6,77,104,.12); }
+.idx { position:absolute; left:78px; top:160px; writing-mode:vertical-rl; transform:rotate(180deg); font-size:22px; letter-spacing:6px; opacity:.55; direction:ltr; }
+.rule { position:absolute; right:110px; left:110px; height:2px; background:rgba(255,255,255,.18); }
+.lt .rule { background:rgba(6,77,104,.15); }
+.num { font-weight:700; line-height:.9; direction:ltr; display:inline-block; }
+.stat { display:grid; grid-template-columns:260px 1fr; align-items:center; gap:30px; padding:34px 0; border-bottom:2px solid rgba(255,255,255,.14); }
+.lt .stat { border-color:rgba(6,77,104,.12); }
+.stat:last-child { border-bottom:none; }
+.stat .num { font-size:120px; }
+.stat p { font-size:34px; line-height:1.5; }
+.dots { display:grid; grid-template-columns:repeat(10,1fr); gap:12px; }
+.dots i { aspect-ratio:1; border-radius:50%; background:rgba(255,255,255,.16); display:block; }
+.dots i.on { background:var(--yellow); }
+.src { position:absolute; top:1190px; right:110px; font-size:21px; opacity:.7; }
+.label { display:inline-flex; align-items:center; gap:12px; font-size:26px; font-weight:700; letter-spacing:.5px; }
+.label b { width:14px; height:14px; border-radius:50%; background:var(--yellow); display:inline-block; }
+.lt .label { color:var(--blue); }
+
+/* textured backgrounds */
+.bg-ink { background:
+  radial-gradient(900px 700px at 85% 0%, rgba(5,127,172,.55), transparent 60%),
+  radial-gradient(600px 500px at 0% 100%, rgba(241,244,6,.07), transparent 60%),
+  linear-gradient(rgba(255,255,255,.045) 2px, transparent 2px) 0 0/60px 60px,
+  linear-gradient(90deg, rgba(255,255,255,.045) 2px, transparent 2px) 0 0/60px 60px,
+  #064D68; }
+.bg-blue { background:
+  radial-gradient(800px 600px at 10% 10%, rgba(255,255,255,.16), transparent 60%),
+  repeating-linear-gradient(135deg, rgba(255,255,255,.05) 0 2px, transparent 2px 26px),
+  #057FAC; }
+.bg-light { background:
+  radial-gradient(rgba(5,127,172,.16) 2.5px, transparent 2.5px) 0 0/34px 34px,
+  radial-gradient(700px 500px at 100% 100%, rgba(5,127,172,.12), transparent 60%),
+  #EFF7FA; }
+.bg-white { background:
+  linear-gradient(rgba(6,77,104,.05) 2px, transparent 2px) 0 0/48px 48px,
+  linear-gradient(90deg, rgba(6,77,104,.05) 2px, transparent 2px) 0 0/48px 48px,
+  #fff; }
+</style></head><body>
+
+<!-- 1 cover -->
+<section class="slide bg-ink dk">
+  <div class="frame"></div>
+  <div class="hd-s"><i></i>مختبر أدوات الذكاء الاصطناعي</div><div class="hd-n">زينب الفزارية</div>
+  <div class="a" style="right:110px;left:110px;top:200px;display:flex;justify-content:flex-start">
+    <div class="num" style="font-size:330px;color:var(--yellow)">50%</div>
+    
+  </div>
+  <div class="rule" style="top:600px"></div>
+  <div class="a" style="right:110px;left:110px;top:660px">
+    <h1 style="font-size:72px">من الموظفين يعترفون:<br>نعتمد على الذكاء الاصطناعي<br><span class="mark">أكثر من اللازم.</span></h1>
+  </div>
+  <div class="a" style="left:110px;top:1140px;background:#fff;color:var(--ink);font-size:28px;font-weight:700;padding:14px 30px;border-radius:999px">اسحب ←</div>
+  <div class="ft n">01 / 08</div><div class="ft h">LinkedIn: Zainab Al Fazari</div>
+</section>
+
+<!-- 2 opener -->
+<section class="slide bg-light lt">
+  <div class="frame"></div>
+  <div class="hd-s"><i></i>مختبر أدوات الذكاء الاصطناعي</div><div class="hd-n">زينب الفزارية</div>
+  <div class="a" style="right:110px;top:230px;font-size:220px;font-weight:700;line-height:1;color:var(--blue)">«</div>
+  <div class="a" style="right:110px;left:110px;top:420px">
+    <h2 style="font-size:76px">خففوا النسخ واللصق<br>من <span class="mark">ChatGPT</span>..</h2>
+    <p style="font-size:34px;margin-top:30px;line-height:1.6">قلتها قبل، واليوم تقرير جديد يقولها بالأرقام.</p>
+  </div>
+  <div class="a card" style="right:110px;left:110px;top:900px;padding:30px 40px;display:grid;grid-template-columns:1fr 1fr 1fr;text-align:center;gap:10px">
+    <div><div class="num" style="font-size:52px;color:var(--blue)">2,500</div><div style="font-size:24px;margin-top:8px">موظف</div></div>
+    <div style="border-right:2px solid rgba(6,77,104,.12);border-left:2px solid rgba(6,77,104,.12)"><div class="num" style="font-size:52px;color:var(--blue)">10</div><div style="font-size:24px;margin-top:8px">دول</div></div>
+    <div><div style="font-size:30px;font-weight:700;color:var(--blue);line-height:1.2">نوفمبر 2025<br>– يناير 2026</div></div>
+  </div>
+  <div class="src" style="opacity:.75">المصدر: <span dir="ltr">GoTo &amp; Workplace Intelligence, The Pulse of Work in 2026</span></div>
+  <div class="ft n">02 / 08</div><div class="ft h">LinkedIn: Zainab Al Fazari</div>
+</section>
+
+<!-- 3 reliance -->
+<section class="slide bg-ink dk">
+  <div class="frame"></div>
+  <div class="hd-s"><i></i>مختبر أدوات الذكاء الاصطناعي</div><div class="hd-n">زينب الفزارية</div>
+  <div class="a" style="right:110px;top:200px"><span class="label"><b></b>الاعتماد</span></div>
+  <div class="a" style="right:110px;left:110px;top:270px">
+    <div class="stat"><span class="num" style="color:var(--yellow)">50%</span><p>يعتمدون عليه<br>أكثر من اللازم</p></div>
+    <div class="stat"><span class="num">30%</span><p>لا يستطيعون إنجاز عملهم بدونه</p></div>
+    <div class="stat"><span class="num">28%</span><p>يثقون به أكثر<br>من حكمهم الشخصي</p></div>
+  </div>
+  <div class="src">المصدر: <span dir="ltr">GoTo, The Pulse of Work in 2026</span> · استطلاع آراء</div>
+  <div class="ft n">03 / 08</div><div class="ft h">LinkedIn: Zainab Al Fazari</div>
+</section>
+
+<!-- 4 cost: dots -->
+<section class="slide bg-blue dk">
+  <div class="frame"></div>
+  <div class="hd-s"><i></i>مختبر أدوات الذكاء الاصطناعي</div><div class="hd-n">زينب الفزارية</div>
+  <div class="a" style="right:110px;top:200px"><span class="label"><b></b>الثمن</span></div>
+  <div class="a" style="right:110px;left:110px;top:280px">
+    <h2 style="font-size:60px">«يُضعف مهاراتي،<br>ويجعلني <span class="mark">أقل ذكاءً</span>»</h2>
+  </div>
+  <div class="a" style="right:110px;width:420px;top:560px">
+    <div class="dots"><script>for(let i=0;i<100;i++)document.write('<i'+(i<39?' class="on"':'')+'></i>')</script></div>
+  </div>
+  <div class="a" style="left:110px;width:380px;top:560px">
+    <div class="num" style="font-size:150px;color:var(--yellow)">39%</div>
+    <p style="font-size:30px;margin-top:16px;line-height:1.5">من الموظفين يقولون ذلك</p>
+    <div class="rule" style="position:static;margin:34px 0"></div>
+    <div class="num" style="font-size:76px">46%</div>
+    <p style="font-size:28px;margin-top:10px">بين الجيل Z</p>
+  </div>
+  <div class="a" style="right:110px;left:110px;top:1080px;font-size:30px">كما يخشى 41% أن يضر هذا الاعتماد بمستقبلهم المهني.</div>
+  <div class="src">المصدر: <span dir="ltr">GoTo, The Pulse of Work in 2026</span> · استطلاع آراء</div>
+  <div class="ft n">04 / 08</div><div class="ft h">LinkedIn: Zainab Al Fazari</div>
+</section>
+
+<!-- 5 polished but wrong -->
+<section class="slide bg-light lt">
+  <div class="frame"></div>
+  <div class="hd-s"><i></i>مختبر أدوات الذكاء الاصطناعي</div><div class="hd-n">زينب الفزارية</div>
+  <div class="a" style="right:110px;top:200px"><span class="label"><b></b>مصقول.. لكن</span></div>
+  <div class="a" style="right:110px;left:110px;top:280px">
+    <h2 style="font-size:60px">المراجعة صارت<br><span class="mark">أثقل</span> من الكتابة</h2>
+  </div>
+  <div class="a" style="right:110px;left:110px;top:560px;display:grid;grid-template-columns:1fr 1fr;gap:24px">
+    <div class="card shadow" style="padding:40px 34px">
+      <div class="num" style="font-size:110px;color:var(--blue)">43%</div>
+      <p style="font-size:30px;line-height:1.5;margin-top:20px">استخدموا محتوى من الذكاء الاصطناعي وهم يشكّون في جودته</p>
+    </div>
+    <div class="card shadow" style="padding:40px 34px;background:var(--ink);color:#fff">
+      <div class="num" style="font-size:110px;color:var(--yellow)">77%</div>
+      <p style="font-size:30px;line-height:1.5;margin-top:20px">يقولون إن مراجعة عمله تستغرق وقتًا أطول من عمل الإنسان</p>
+    </div>
+  </div>
+  <div class="src" style="opacity:.75">المصدر: <span dir="ltr">GoTo, The Pulse of Work in 2026</span> · استطلاع آراء</div>
+  <div class="ft n">05 / 08</div><div class="ft h">LinkedIn: Zainab Al Fazari</div>
+</section>
+
+<!-- 6 HBR -->
+<section class="slide bg-ink dk">
+  <div class="frame"></div>
+  <div class="hd-s"><i></i>مختبر أدوات الذكاء الاصطناعي</div><div class="hd-n">زينب الفزارية</div>
+  <div class="a" style="right:110px;top:200px"><span class="label"><b></b>والوقت الذي وُعدنا به؟</span></div>
+  <div class="a" style="right:110px;left:110px;top:300px">
+    <p style="font-size:44px;opacity:.75;text-decoration:line-through;text-decoration-thickness:3px">الذكاء الاصطناعي يقلل العمل</p>
+    <h2 style="font-size:80px;margin-top:24px">بل <span class="mark">يكثّفه</span>.</h2>
+  </div>
+  <div class="a" style="right:110px;left:110px;top:680px;display:flex;flex-direction:column;gap:20px">
+    <div style="display:flex;align-items:center;gap:22px;font-size:36px"><span class="num-b num-y">1</span>إيقاع أسرع</div>
+    <div style="display:flex;align-items:center;gap:22px;font-size:36px"><span class="num-b num-y">2</span>مهام أكثر</div>
+    <div style="display:flex;align-items:center;gap:22px;font-size:36px"><span class="num-b num-y">3</span>ساعات تمتد دون أن يطلبها أحد</div>
+  </div>
+  <div class="src">المصدر: <span dir="ltr">Ranganathan &amp; Ye, Harvard Business Review</span>، فبراير 2026</div>
+  <div class="ft n">06 / 08</div><div class="ft h">LinkedIn: Zainab Al Fazari</div>
+</section>
+
+<!-- 7 how -->
+<section class="slide bg-white lt">
+  <div class="frame"></div>
+  <div class="hd-s"><i></i>مختبر أدوات الذكاء الاصطناعي</div><div class="hd-n">زينب الفزارية</div>
+  <div class="a" style="right:110px;left:110px;top:220px">
+    <h2 style="font-size:64px">استخدمه..<br>دون أن <span class="mark">يستخدمك</span></h2>
+  </div>
+  <div class="a" style="right:110px;left:110px;top:520px;display:flex;flex-direction:column;gap:22px">
+    <div class="card" style="background:var(--light);padding:32px 38px;display:flex;align-items:center;gap:28px"><div class="num" style="font-size:64px;color:var(--blue);width:70px">01</div><span style="font-size:34px;font-weight:700">اكتب فكرتك أولًا، ثم اطلب تحسينها</span></div>
+    <div class="card" style="background:var(--light);padding:32px 38px;display:flex;align-items:center;gap:28px"><div class="num" style="font-size:64px;color:var(--blue);width:70px">02</div><span style="font-size:34px;font-weight:700">لا ترسل شيئًا لم تقرأه بنفسك</span></div>
+    <div class="card" style="background:var(--ink);color:#fff;padding:32px 38px;display:flex;align-items:center;gap:28px"><div class="num" style="font-size:64px;color:var(--yellow);width:70px">03</div><span style="font-size:34px;font-weight:700">احتفظ بمهمة تنجزها دائمًا بدونه</span></div>
+  </div>
+  <div class="ft n">07 / 08</div><div class="ft h">LinkedIn: Zainab Al Fazari</div>
+</section>
+
+<!-- 8 close -->
+<section class="slide bg-ink dk">
+  <div class="frame"></div>
+  <div class="hd-s"><i></i>مختبر أدوات الذكاء الاصطناعي</div><div class="hd-n">زينب الفزارية</div>
+  <div class="outline" style="left:60px;top:200px;font-size:420px">AI</div>
+  <div class="a" style="right:110px;left:110px;top:640px">
+    <p style="font-size:44px">الأدوات أصبحت أذكى..</p>
+    <h1 style="font-size:84px;margin-top:20px">فهل أصبحنا<br><span class="mark">نحن كذلك</span>؟</h1>
+  </div>
+  <div class="ft n">08 / 08</div><div class="ft h">LinkedIn: Zainab Al Fazari</div>
+</section>
+</body></html>
