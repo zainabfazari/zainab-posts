@@ -1,0 +1,39 @@
+/* editorial variant: thin frame, top rule, side index, big numerals */
+.frame { position:absolute; inset:36px; border:2px solid rgba(255,255,255,.14); border-radius:28px; pointer-events:none; }
+.lt .frame { border-color:rgba(6,77,104,.12); }
+.idx { position:absolute; left:78px; top:160px; writing-mode:vertical-rl; transform:rotate(180deg); font-size:22px; letter-spacing:6px; opacity:.55; direction:ltr; }
+.rule { position:absolute; right:110px; left:110px; height:2px; background:rgba(255,255,255,.18); }
+.lt .rule { background:rgba(6,77,104,.15); }
+.num { font-weight:700; line-height:.9; direction:ltr; display:inline-block; }
+.stat { display:grid; grid-template-columns:260px 1fr; align-items:center; gap:30px; padding:34px 0; border-bottom:2px solid rgba(255,255,255,.14); }
+.lt .stat { border-color:rgba(6,77,104,.12); }
+.stat:last-child { border-bottom:none; }
+.stat .num { font-size:120px; }
+.stat p { font-size:34px; line-height:1.5; }
+.dots { display:grid; grid-template-columns:repeat(10,1fr); gap:12px; }
+.dots i { aspect-ratio:1; border-radius:50%; background:rgba(255,255,255,.16); display:block; }
+.dots i.on { background:var(--yellow); }
+.src { position:absolute; top:1190px; right:110px; font-size:21px; opacity:.7; }
+.label { display:inline-flex; align-items:center; gap:12px; font-size:26px; font-weight:700; letter-spacing:.5px; }
+.label b { width:14px; height:14px; border-radius:50%; background:var(--yellow); display:inline-block; }
+.lt .label { color:var(--blue); }
+
+/* textured backgrounds */
+.bg-ink { background:
+  radial-gradient(900px 700px at 85% 0%, rgba(5,127,172,.55), transparent 60%),
+  radial-gradient(600px 500px at 0% 100%, rgba(241,244,6,.07), transparent 60%),
+  linear-gradient(rgba(255,255,255,.045) 2px, transparent 2px) 0 0/60px 60px,
+  linear-gradient(90deg, rgba(255,255,255,.045) 2px, transparent 2px) 0 0/60px 60px,
+  #064D68; }
+.bg-blue { background:
+  radial-gradient(800px 600px at 10% 10%, rgba(255,255,255,.16), transparent 60%),
+  repeating-linear-gradient(135deg, rgba(255,255,255,.05) 0 2px, transparent 2px 26px),
+  #057FAC; }
+.bg-light { background:
+  radial-gradient(rgba(5,127,172,.16) 2.5px, transparent 2.5px) 0 0/34px 34px,
+  radial-gradient(700px 500px at 100% 100%, rgba(5,127,172,.12), transparent 60%),
+  #EFF7FA; }
+.bg-white { background:
+  linear-gradient(rgba(6,77,104,.05) 2px, transparent 2px) 0 0/48px 48px,
+  linear-gradient(90deg, rgba(6,77,104,.05) 2px, transparent 2px) 0 0/48px 48px,
+  #fff; }
